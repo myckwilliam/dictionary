@@ -1,0 +1,11 @@
+<form #form class="form" (ngSubmit)="handleSubmit(word.value)">
+  <input
+    type="text"
+    name="word"
+    id="word"
+    #word
+    placeholder="Type the word..."
+    class="word-input"
+  />
+  <button type="submit" class="submit-button">Search</button>
+</form>
