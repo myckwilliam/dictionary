@@ -18,6 +18,8 @@ Pode-se ver um exemplo na imagem:
 
 ## Rodando o projeto
 
+### Desenvolvimento
+
 Para rodar o projeto em modo de desenvolvimento:
 
 1. Clone para a sua máquina
@@ -25,3 +27,6 @@ Para rodar o projeto em modo de desenvolvimento:
 3. Utilize `ng s` para servir o projeto (precisa do Angular CLI instalado na máquina)
 4. Visite http://localhost:4200
 
+### Produção
+
+Para acessar o projeto em produção, basta acessar o link [Dictionary](https://dictionary-puce.vercel.app/)
