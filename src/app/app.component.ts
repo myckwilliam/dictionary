@@ -11,8 +11,12 @@ import { Dictionary } from './shared/models/dictionary';
 export class AppComponent {
   word = '';
   definition = '';
+  theme = '';
+  themeButtonLabel = '';
 
-  constructor(private service: DictionaryService) {}
+  constructor(private service: DictionaryService) {
+    this.themeButtonLabel = this.theme ? 'Light' : 'Dark';
+  }
 
   sendRequest(word: string) {
     if (!word) {
@@ -33,5 +37,10 @@ export class AppComponent {
           },
         });
     }
+  }
+
+  changeTheme() {
+    this.theme = this.theme ? '' : 'dark-mode';
+    this.themeButtonLabel = this.theme ? 'Light' : 'Dark';
   }
 }

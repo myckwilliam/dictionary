@@ -1,6 +1,5 @@
-$blue: #1239bc;
-$green: #00ff7f;
-
+:host {
+}
 .form {
   display: flex;
   justify-content: center;
@@ -12,18 +11,18 @@ $green: #00ff7f;
 .word-input {
   height: 50px;
   width: 80%;
-  border: 2px solid $blue;
+  border: 2px solid var(--primary);
   border-radius: 15px;
   background-color: transparent;
   padding: 0 1rem;
   font-weight: 700;
   font-size: 1rem;
-  color: $blue;
+  color: var(--primary);
 
   &::placeholder {
     font-weight: 700;
     font-size: 1rem;
-    color: $blue;
+    color: var(--primary);
     opacity: 0.74;
   }
 
@@ -34,10 +33,10 @@ $green: #00ff7f;
 
 .submit-button {
   height: 54px;
-  background-color: $blue;
+  background-color: var(--primary);
   font-weight: 700;
   font-size: 1rem;
-  color: $green;
+  color: var(--secondary);
   border-radius: 15px;
   margin-left: 20px;
   width: 100px;
@@ -45,10 +44,11 @@ $green: #00ff7f;
   cursor: pointer;
 
   &:hover {
-    color: $blue;
-    background-color: $green;
-    border: 2px solid $blue;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
     height: 52px;
+    transition: none;
   }
 }
 

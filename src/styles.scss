@@ -1,3 +1,6 @@
+$blue: #1239bc;
+$green: #00ff7f;
+
 html,
 body,
 div,
@@ -121,4 +124,15 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+:root {
+  --primary: #1239bc;
+  --secondary: #00ff7f;
+}
+
+:root .dark-mode {
+  --primary: #00ff7f;
+  --secondary: #1239bc;
+  transition: all 0.5s ease;
 }

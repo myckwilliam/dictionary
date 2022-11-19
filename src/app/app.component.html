@@ -1,11 +1,18 @@
-<main>
+<main [ngClass]="theme">
+  <header>
+    <button class="theme-button" (click)="changeTheme()">
+      {{ themeButtonLabel }}
+    </button>
+  </header>
   <div class="container">
-    <app-input (sendRequest)="sendRequest($event)"></app-input>
-    <div class="info">
-      <h2 class="title">{{ word }}</h2>
-      <h3 class="definition" *ngIf="definition">
-        {{ definition }}
-      </h3>
+    <div class="content">
+      <app-input (sendRequest)="sendRequest($event)"></app-input>
+      <div class="info">
+        <h2 class="title">{{ word }}</h2>
+        <h3 class="definition" *ngIf="definition">
+          {{ definition }}
+        </h3>
+      </div>
     </div>
   </div>
 </main>
