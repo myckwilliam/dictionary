@@ -1,27 +1,32 @@
 # Dictionary
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Esse projeto usa [DictionaryAPI](https://dictionaryapi.dev/) para informar a descrição das palavras buscadas em inglês.
 
-## Development server
+## Funcionamento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+É bastante simples. Ao abrir a aplicação o usuário poderá:
 
-## Code scaffolding
+1. Escrever uma palavra em inglês no input
+2. Apertar `ENTER` ou clicar no botão `Search`
+3. Se a palavra estiver contemplada pela API, a mesma é mostrada junto ao seu significado
+4. Senão, é mostrada uma mensagem de `Not Found`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Pode-se ver um exemplo na imagem:
 
-## Build
+![image](https://user-images.githubusercontent.com/75875219/202854583-d9b67836-470c-4f8f-8b1b-a5649e3e601c.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Rodando o projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Desenvolvimento
 
-## Running end-to-end tests
+Para rodar o projeto em modo de desenvolvimento:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone para a sua máquina
+2. Utilize o comando `npm i` para instalar as dependências
+3. Utilize `ng s` para servir o projeto (precisa do Angular CLI instalado na máquina)
+4. Visite http://localhost:4200
 
-## Further help
+### Produção
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para acessar o projeto em produção, basta acessar o link [Dictionary](https://dictionary-puce.vercel.app/)
